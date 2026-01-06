@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/*----------------------------------------
+
+目次
+    hero
+    about
+    conversion
+
+----------------------------------------*/
+
+/*----------------------------------------
+
+    hero
+
+----------------------------------------*/
+
+#hero {
+    background: url(../img/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h2 {
+    font-size: 80px;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    #hero h2 {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #hero h2 {
+        font-size: 20px;
+    }
+
+}
+
+/*----------------------------------------
+
+    about
+
+----------------------------------------*/
+
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+#about .content {
+    width: 50%;
+    background: #efefef;
+}
+
+#about .left {
+    padding: 30px;
+}
+
+#about .content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#about .right img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    #about .content p {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #about .left {
+        padding: 20px;
+    }
+
+
+    #about .content p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+flex-wrap: wrap;
+    }
+    #about .content {
+    width: 100%;
+}
+
+
+    #about .content p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+}
+
+/*----------------------------------------
+
+    conversion
+
+----------------------------------------*/
+
+#conversion {
+    padding: 80px 30px 150px;
+    background: url(../img/conversion.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#conversion .content {
+    text-align: center;
+    border: 10px solid #000;
+    padding: 60px 30px;
+}
+
+#conversion .content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    #conversion .content p {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #conversion .content p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #conversion .content p {
+        font-size: 16px;
+    }
+
+}
